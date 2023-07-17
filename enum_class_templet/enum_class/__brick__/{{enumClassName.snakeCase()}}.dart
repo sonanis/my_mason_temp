@@ -17,12 +17,8 @@ class {{enumClassName.pascalCase()}} extends EnumClass{
   ];
 
   static {{enumClassName.pascalCase()}}? fromValue(int? val){
-    if (val != null) {
-      List<{{enumClassName.pascalCase()}}> list = values.where((element) => element.value == val).toList();
-      if(list.isNotEmpty){
-        return list.first;
-      }
-    }
+    int index = values.indexWhere((e) => e.value == val);
+    if(index >= 0) return values[index];
     return null;
   }
 
