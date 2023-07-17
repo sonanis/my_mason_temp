@@ -1,0 +1,15 @@
+{
+ "enumClassName": "FaultState",
+ "enumValues":[
+   {
+     "enumItem":"inHand",
+     "enumVal": 15,
+     "enumLabel": "处理中"
+   },
+   {
+     "enumItem":"end",
+     "enumVal": 40,
+     "enumLabel": "已完结"
+   }
+ ]
+}
